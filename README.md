@@ -62,6 +62,35 @@ a + Math.pow( 2, 970 );		// Infinity
 a + Math.pow( 2, 969 );		// 1.7976931348623157e+308
 ```
 
+#### ```Iterator```
+An object that can be iterable inside a loop, like ```array```.
+
+```js
+  const iterableObject = {
+    to: 3,
+    [Symbol.iterator]() {
+      const to = this.to
+      let current = 0
+      return {
+        next() {
+          current++
+          return {
+            done: current > to,
+            value: current,
+          }
+        }
+      }
+    }
+  }
+
+  console.log(...iterableObject) // 1 2 3
+
+  for (let num of iterableObject) {
+    console.log(num) // 1 2 3
+  }
+```
+
+
 ## J:
 
 #### JSON-safe:
