@@ -10,6 +10,10 @@ Dictionary:
 
 ## C:
 
+#### ```Closure```
+Closure is when a function is able to remember and access its ```lexical scope``` even when that function is executing outside its lexical scope.
+[More about Scope and Closure](Scope&Closure.md)
+
 #### ```Coercion```
 Coercion - it's implicit converting a value from one type to another.
 https://github.com/dorey/JavaScript-Equality-Table
@@ -28,6 +32,12 @@ the event queue to stack when stack becomes empty.
 One of the part js execution enviroment, that contain queue of event,
 that are ready to execution. These event were moved to queue from WebApis (for browsers),
 and are waiting to be moved to ```stack``` by ```event loop```
+
+## H:
+
+#### Hoisting
+Moving all declarations to their respective scopes.
+[More about Scope and Closure](Scope&Closure.md)
 
 
 ## I:
@@ -67,7 +77,8 @@ Not Json-safe: ```undefineds```, ```functions```, ```symbols```, and objects wit
 ## O:
 
 #### ```OLOO```
-- (objects-linked-to-other-objects) is a code style which creates and relates objects directly without the abstraction of classes. OLOO quite naturally implements [[Prototype]]-based behavior delegation.
+Objects-linked-to-other-objects is a code style which creates and relates objects directly without the abstraction of classes. OLOO quite naturally implements [[Prototype]]-based behavior delegation.
+[More about objects](Object.md)
 
 
 ## T:
@@ -104,5 +115,4 @@ The maximum integer that can "safely" be represented is ```2^53 - 1```, which is
 ## S:
 
 #### ```Symbol```
-
 
