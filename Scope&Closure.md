@@ -1,5 +1,3 @@
-# javascript-dictionary
-
 ## Compiler Theory
 
 ### Step of compiling:
