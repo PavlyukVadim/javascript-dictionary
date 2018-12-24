@@ -7,6 +7,8 @@
 
 
 Dictionary:
+## A:
+## B:
 
 ## C:
 
@@ -20,6 +22,13 @@ https://github.com/dorey/JavaScript-Equality-Table
 
 #### ```Callback```
 The function that should be called when relative event executes.
+
+## D:
+
+#### ```Duck typing```
+General term for "type checks" that make assumptions about a value's "type"
+based on its shape (what properties are present).
+"If it looks like a duck, and quacks like a duck, it must be a duck".
 
 
 ## E:
@@ -69,16 +78,54 @@ Not Json-safe: ```undefineds```, ```functions```, ```symbols```, and objects wit
 #### ```Mixins``` 
 
 
-## P:
-
-#### ```Parasitic inheritance```
-
-
 ## O:
 
 #### ```OLOO```
 Objects-linked-to-other-objects is a code style which creates and relates objects directly without the abstraction of classes. OLOO quite naturally implements [[Prototype]]-based behavior delegation.
 [More about objects](Object.md)
+
+
+## P:
+
+#### ```Parasitic inheritance```
+
+#### ```Promise```
+It's a special JavaScript object that resovles ```async code``` by execute
+depanding on event code after event trigers. Also it allows handle errors and combines ```async code```
+by some conditions, like waiting on all event, etc.
+
+```js
+let promise = new Promise(function(resolve, reject) {
+  setTimeout(() => resolve("done!"), 1000);
+});
+
+// resolve runs the first function in .then
+promise.then(
+  result => alert(result), // shows "done!" after 1 second
+  error => alert(error) // doesn't run
+);
+```
+
+#### ```Promise.all```
+Wait the moment when each promime will be ready.
+
+```js
+Promise.all([
+  new Promise((resolve, reject) => setTimeout(() => resolve(1), 3000)), // 1
+  new Promise((resolve, reject) => setTimeout(() => resolve(2), 2000)), // 2
+  new Promise((resolve, reject) => setTimeout(() => resolve(3), 1000))  // 3
+]).then(alert);
+```
+
+#### ```Promise.race```
+Wait the moment when first promime will be ready or will be rejected.
+```js
+Promise.race([
+  new Promise((resolve, reject) => setTimeout(() => resolve(1), 1000)),
+  new Promise((resolve, reject) => setTimeout(() => reject(new Error("Whoops!")), 2000)),
+  new Promise((resolve, reject) => setTimeout(() => resolve(3), 3000))
+]).then(alert);
+```
 
 
 ## T:
