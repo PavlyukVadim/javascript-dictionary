@@ -293,8 +293,11 @@ Wait the moment when first promise will be ready or will be rejected.
 #### ```Regular Expressions```
 
 #### ```REST```
+Representational State Transfer is a style of software architecture.
+As described in a dissertation by Roy Fielding, REST is an "architectural style" that basically exploits the existing technology and protocols of the Web
 
-#### ```RESTFull```
+#### ```RESTful```
+To refer to web services implementing such an architecture.
 
 
 ## S:
