@@ -201,7 +201,7 @@ Not Json-safe: ```undefineds```, ```functions```, ```symbols```, and objects wit
 
 ## M:
 
-#### ```Mixins``` 
+#### ```Mixins```
 
 
 ## L
@@ -250,42 +250,16 @@ Objects-linked-to-other-objects is a code style which creates and relates object
 #### ```Partial application```
 
 #### ```Promise```
-It's a special JavaScript object that resovles ```async code``` by execute
-depanding on event code after event trigers. Also it allows handle errors and combines ```async code```
+It's a special JavaScript object that resolves ```async code``` by execute
+depending on event code after event triggering. Also it allows handle errors and combines ```async code```
 by some conditions, like waiting on all event, etc.
-
-```js
-let promise = new Promise(function(resolve, reject) {
-  setTimeout(() => resolve("done!"), 1000);
-});
-
-// resolve runs the first function in .then
-promise.then(
-  result => alert(result), // shows "done!" after 1 second
-  error => alert(error) // doesn't run
-);
-```
+[See example with Promise](JS Core/demo/Promise/1-promise-basic.js)
 
 #### ```Promise.all```
-Wait the moment when each promime will be ready.
-
-```js
-Promise.all([
-  new Promise((resolve, reject) => setTimeout(() => resolve(1), 3000)), // 1
-  new Promise((resolve, reject) => setTimeout(() => resolve(2), 2000)), // 2
-  new Promise((resolve, reject) => setTimeout(() => resolve(3), 1000))  // 3
-]).then(alert);
-```
+Wait the moment when each promise will be ready.
 
 #### ```Promise.race```
-Wait the moment when first promime will be ready or will be rejected.
-```js
-Promise.race([
-  new Promise((resolve, reject) => setTimeout(() => resolve(1), 1000)),
-  new Promise((resolve, reject) => setTimeout(() => reject(new Error("Whoops!")), 2000)),
-  new Promise((resolve, reject) => setTimeout(() => resolve(3), 3000))
-]).then(alert);
-```
+Wait the moment when first promise will be ready or will be rejected.
 
 #### ```Pure function```
 
@@ -298,7 +272,7 @@ Promise.race([
 
 #### ```REST```
 
-#### ```RESTfull```
+#### ```RESTFull```
 
 
 ## S:
@@ -329,7 +303,7 @@ Tail Call Optimization
 
 #### ```TDD```
 
-#### ```Typeof``` 
+#### ```Typeof```
 operator inspects the type of the given value
 Example:
 ```js
