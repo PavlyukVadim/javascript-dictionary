@@ -206,9 +206,9 @@ Not Json-safe: ```undefineds```, ```functions```, ```symbols```, and objects wit
 
 ## L
 
-```Let```
+#### ```Let```
 
-```Localstorage```
+#### ```Localstorage```
 
 
 ## M:
