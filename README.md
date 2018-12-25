@@ -13,6 +13,8 @@
 # Dictionary:
 ## A:
 
+#### ```AST```
+
 #### ```Abstract Equality```
 The == operator's behavior is defined as "The Abstract Equality Comparison Algorithm" in section 11.9.3 of the ES5 spec.
 The comparison x == y, where x and y are values, produces true or false.
@@ -95,6 +97,9 @@ based on its shape (what properties are present).
 
 
 ## E:
+
+#### ```Event Emmiter```
+Universal abstraction for working with events via subscription (addListener, on, once) and emit
 
 #### ```Event loop```
 The mechanism that performs moving functions from
@@ -205,12 +210,7 @@ Json-safe values consist of values that can be represented as JSON.
 Not Json-safe: ```undefineds```, ```functions```, ```symbols```, and objects with circular references.
 
 
-## M:
-
-#### ```Mixins```
-
-
-## L
+## L:
 
 #### ```Let```
 
@@ -218,6 +218,12 @@ Not Json-safe: ```undefineds```, ```functions```, ```symbols```, and objects wit
 
 
 ## M:
+
+#### ```Map```
+
+#### ```Meta Programming```
+
+#### ```Mixins```
 
 #### ```Memoization```
 
@@ -273,10 +279,14 @@ Wait the moment when first promise will be ready or will be rejected.
 
 [Examples with Promise.race](JS%20Core/demo/Promise/3-promise-race.js)
 
+#### ```Proxy```
+
 #### ```Pure function```
 
 
 ## R:
+
+#### ```Reflect```
 
 #### ```Reflection```
 
@@ -292,6 +302,8 @@ Wait the moment when first promise will be ready or will be rejected.
 #### ```Scaffolding```
 
 #### ```Service workers```
+
+#### ```Set```
 
 #### ```Singleton```
 
@@ -334,7 +346,14 @@ typeof Symbol()        //  "symbol"
 #### ```Types```:
 JavaScript defines seven built-in types: ```null```, ```undefined```, ```boolean```, ```number```, ```string```, ```object```, ```symbol```.
 
+#### ```TypedArrays```
+ArrayBuffer, DataView, Int8Array, Uint8Array, Uint8ClampedArray, Int16Array, Uint16Array, Int32Array, Uint32Array, Float32Array, Float64Array
+
 
 ## W:
+
+#### ```WeakMap```
+
+#### ```WeakSet```
 
 #### ```WebWorkers```
