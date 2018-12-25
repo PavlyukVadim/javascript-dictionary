@@ -26,7 +26,7 @@ bool | any | toNumber(bool) == any
 string | object | string == toPrimitive(object)
 number | object | number == toPrimitive(object)
 
-* comparison in reverse order are the same
+!comparison in reverse order are the same
 any another comparison are false
 
 #### ```AJAX```
@@ -34,17 +34,23 @@ any another comparison are false
 #### ```Arrow Functions```
 
 #### ```Authentication```
+Who you are. (login + password)
 
 #### ```Authorization```
+What you are allowed to do. (permissions)
 
 
 ## B:
+
+#### ```BDD```
 
 
 ## C:
 
 #### ```Callback```
 The function that should be called when relative event executes.
+
+#### ```Class```
 
 #### ```Closure```
 Closure is when a function is able to remember and access its ```lexical scope``` even when that function is executing outside its lexical scope.
@@ -56,16 +62,24 @@ Closure is when a function is able to remember and access its ```lexical scope``
 Coercion - it's implicit converting a value from one type to another.
 https://github.com/dorey/JavaScript-Equality-Table
 
+#### ```Composition```
+
 #### ```Const```
 
 #### ```Continuous deployment```
 
 #### ```Continuous integration```
 
+#### ```Currying```
+
 
 ## D:
 
+#### ```Data Access Layer```
+
 #### ```Destructuring```
+
+#### ```Dependency```
 
 #### ```Duck typing```
 General term for "type checks" that make assumptions about a value's "type"
@@ -85,6 +99,14 @@ the event queue to stack when stack becomes empty.
 One of the part js execution enviroment, that contain queue of event,
 that are ready to execution. These event were moved to queue from WebApis (for browsers),
 and are waiting to be moved to ```stack``` by ```event loop```
+
+
+## F:
+
+#### ```Factory```
+
+#### ```Function```
+
 
 ## G:
 
@@ -115,12 +137,16 @@ res.value;		// 42
 
 ## H:
 
-#### Hoisting
+#### ```Higher-order Function```
+
+#### ```Hoisting```
 Moving all declarations to their respective scopes.
 [More about Scope and Closure](Scope&Closure.md)
 
 
 ## I:
+
+#### ```Immutable Data```
 
 #### ```Infinity```
 ```js
@@ -132,6 +158,8 @@ a + a;						        // Infinity
 a + Math.pow( 2, 970 );		// Infinity
 a + Math.pow( 2, 969 );		// 1.7976931348623157e+308
 ```
+
+#### ```Introspection```
 
 #### ```Iterator```
 An object that can be iterable inside a loop, like ```array```.
@@ -185,6 +213,8 @@ Not Json-safe: ```undefineds```, ```functions```, ```symbols```, and objects wit
 
 ## M:
 
+#### ```Memoization```
+
 #### ```Mock```
 
 
@@ -216,6 +246,8 @@ Objects-linked-to-other-objects is a code style which creates and relates object
 ## P:
 
 #### ```Parasitic inheritance```
+
+#### ```Partial application```
 
 #### ```Promise```
 It's a special JavaScript object that resovles ```async code``` by execute
@@ -255,8 +287,12 @@ Promise.race([
 ]).then(alert);
 ```
 
+#### ```Pure function```
+
 
 ## R:
+
+#### ```Reflection```
 
 #### ```Regular Expressions```
 
@@ -267,7 +303,11 @@ Promise.race([
 
 ## S:
 
+#### ```Scaffolding```
+
 #### ```Service workers```
+
+#### ```Singleton```
 
 #### ```Symbol```
 
@@ -279,11 +319,15 @@ Promise.race([
 
 #### ```Stub```
 
+#### ```Superposition```
+
 
 ## T:
 
 #### ```TCO```
 Tail Call Optimization
+
+#### ```TDD```
 
 #### ```Typeof``` 
 operator inspects the type of the given value
@@ -308,4 +352,3 @@ JavaScript defines seven built-in types: ```null```, ```undefined```, ```boolean
 ## W:
 
 #### ```WebWorkers```
-
