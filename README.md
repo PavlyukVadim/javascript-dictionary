@@ -228,6 +228,8 @@ Not Json-safe: ```undefineds```, ```functions```, ```symbols```, and objects wit
 #### ```Memoization```
 
 #### ```Mock```
+Mocks or Fakes are faking certain modules or behaviors
+to test different parts of a processes.
 
 
 ## N:
@@ -321,9 +323,15 @@ To refer to web services implementing such an architecture.
 
 #### ```Spread operator```
 
-#### ```Spike```
+#### ```Spies```
+Spies provide us with information about functions:
+* How many times were they called?
+* In what cases?
+* By whom?
 
 #### ```Stub```
+Stubbing replaces selected functions with selected functions
+to ensure an expected behavior on selected modules.
 
 #### ```Superposition```
 
