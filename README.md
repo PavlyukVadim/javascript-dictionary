@@ -1,12 +1,16 @@
 # javascript-dictionary
 
 ## Table of content:
-1. [Scope and Closure](Scope&Closure.md)
-1. [This](this.md)
-1. [Object](Object.md)
+1. [JS Core](JS%20Core)
+1. [OOP](OOP)
+1. [Design Patterns](Design%20Patterns)
+1. [Architecture principles](Architecture%20principles)
+1. [Functional programming](Functional%20programming)
+1. [Client-Server Communication](Client-Server%20Communication)
+1. [Testing in JS](Testing%20in%20JS)
 
 
-Dictionary:
+# Dictionary:
 ## A:
 
 #### ```Abstract Equality```
@@ -54,7 +58,7 @@ The function that should be called when relative event executes.
 
 #### ```Closure```
 Closure is when a function is able to remember and access its ```lexical scope``` even when that function is executing outside its lexical scope.
-[More about Scope and Closure](Scope&Closure.md)
+[More about Scope and Closure](JS%20Core/Scope&Closure.md)
 
 #### ```Cookie```
 
@@ -141,7 +145,7 @@ res.value;		// 42
 
 #### ```Hoisting```
 Moving all declarations to their respective scopes.
-[More about Scope and Closure](Scope&Closure.md)
+[More about Scope and Closure](JS%20Core/Scope&Closure.md)
 
 
 ## I:
@@ -240,7 +244,7 @@ Object.setPrototypeOf( o2, o1 );
 
 #### ```OLOO```
 Objects-linked-to-other-objects is a code style which creates and relates objects directly without the abstraction of classes. OLOO quite naturally implements [[Prototype]]-based behavior delegation.
-[More about objects](Object.md)
+[More about objects](JS%20Core/Object.md)
 
 
 ## P:
@@ -253,13 +257,15 @@ Objects-linked-to-other-objects is a code style which creates and relates object
 It's a special JavaScript object that resolves ```async code``` by execute
 depending on event code after event triggering. Also it allows handle errors and combines ```async code```
 by some conditions, like waiting on all event, etc.
-[See example with Promise](JS Core/demo/Promise/1-promise-basic.js)
+[Examples with Promise](JS%20Core/demo/Promise/1-promise-basic.js)
 
 #### ```Promise.all```
 Wait the moment when each promise will be ready.
+[Examples with Promise.all](JS%20Core/demo/Promise/2-promise-all.js)
 
 #### ```Promise.race```
 Wait the moment when first promise will be ready or will be rejected.
+[Examples with Promise.race](JS%20Core/demo/Promise/3-promise-race.js)
 
 #### ```Pure function```
 
