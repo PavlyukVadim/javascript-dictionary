@@ -29,28 +29,50 @@ number | object | number == toPrimitive(object)
 * comparison in reverse order are the same
 any another comparison are false
 
+#### ```AJAX```
+
+#### ```Arrow Functions```
+
+#### ```Authentication```
+
+#### ```Authorization```
+
 
 ## B:
 
+
 ## C:
+
+#### ```Callback```
+The function that should be called when relative event executes.
 
 #### ```Closure```
 Closure is when a function is able to remember and access its ```lexical scope``` even when that function is executing outside its lexical scope.
 [More about Scope and Closure](Scope&Closure.md)
 
+#### ```Cookie```
+
 #### ```Coercion```
 Coercion - it's implicit converting a value from one type to another.
 https://github.com/dorey/JavaScript-Equality-Table
 
-#### ```Callback```
-The function that should be called when relative event executes.
+#### ```Const```
+
+#### ```Continuous deployment```
+
+#### ```Continuous integration```
+
 
 ## D:
+
+#### ```Destructuring```
 
 #### ```Duck typing```
 General term for "type checks" that make assumptions about a value's "type"
 based on its shape (what properties are present).
 "If it looks like a duck, and quacks like a duck, it must be a duck".
+
+#### ```DRY```
 
 
 ## E:
@@ -63,6 +85,33 @@ the event queue to stack when stack becomes empty.
 One of the part js execution enviroment, that contain queue of event,
 that are ready to execution. These event were moved to queue from WebApis (for browsers),
 and are waiting to be moved to ```stack``` by ```event loop```
+
+## G:
+
+#### ```Generator```
+It's a special kind of function that can start and stop one or more times,
+and doesn't necessarily ever have to finish.
+
+```js
+function *foo(x) {
+	var y = x * (yield);
+	return y;
+}
+
+var it = foo( 6 );
+
+// start `foo(..)`
+it.next();
+
+var res = it.next( 7 );
+
+res.value;		// 42
+```
+
+#### ```graphQL```
+
+#### ```GWT```
+
 
 ## H:
 
@@ -115,13 +164,11 @@ An object that can be iterable inside a loop, like ```array```.
 
 ## J:
 
-#### JSON-safe:
+#### ```JSON```
+
+#### ```JSON-safe```
 Json-safe values consist of values that can be represented as JSON.
 Not Json-safe: ```undefineds```, ```functions```, ```symbols```, and objects with circular references.
-
-
-```js
-```
 
 
 ## M:
@@ -129,7 +176,37 @@ Not Json-safe: ```undefineds```, ```functions```, ```symbols```, and objects wit
 #### ```Mixins``` 
 
 
+## L
+
+```Let```
+
+```Localstorage```
+
+
+## M:
+
+#### ```Mock```
+
+
+## N:
+
+#### ```Numbers```
+JavaScript's numbers is based on the "IEEE 754" standard, often called "floating-point." JavaScript specifically uses the "double precision" format (aka "64-bit binary").
+
+#### ```Number.MAX_VALUE```
+The maximum integer that can "safely" be represented is ```2^53 - 1```, which is ```9007199254740991```
+
+
 ## O:
+
+#### ```Object.assign```
+Allows shadow cloning props from one object into another.
+
+#### ```Object.setPrototypeOf```
+
+```js
+Object.setPrototypeOf( o2, o1 );
+```
 
 #### ```OLOO```
 Objects-linked-to-other-objects is a code style which creates and relates objects directly without the abstraction of classes. OLOO quite naturally implements [[Prototype]]-based behavior delegation.
@@ -179,7 +256,34 @@ Promise.race([
 ```
 
 
+## R:
+
+#### ```Regular Expressions```
+
+#### ```REST```
+
+#### ```RESTfull```
+
+
+## S:
+
+#### ```Service workers```
+
+#### ```Symbol```
+
+#### ```SOLID```
+
+#### ```Spread operator```
+
+#### ```Spike```
+
+#### ```Stub```
+
+
 ## T:
+
+#### ```TCO```
+Tail Call Optimization
 
 #### ```Typeof``` 
 operator inspects the type of the given value
@@ -201,16 +305,7 @@ typeof Symbol()        //  "symbol"
 JavaScript defines seven built-in types: ```null```, ```undefined```, ```boolean```, ```number```, ```string```, ```object```, ```symbol```.
 
 
-## N:
+## W:
 
-#### ```Numbers```
-JavaScript's numbers is based on the "IEEE 754" standard, often called "floating-point." JavaScript specifically uses the "double precision" format (aka "64-bit binary").
-
-#### ```Number.MAX_VALUE```
-The maximum integer that can "safely" be represented is ```2^53 - 1```, which is ```9007199254740991```
-
-
-## S:
-
-#### ```Symbol```
+#### ```WebWorkers```
 
