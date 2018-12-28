@@ -1,7 +1,7 @@
 # JS Core
 
 ## Table of content:
+1. [Operators](Operators.md)
 1. [Scope and Closure](Scope&Closure.md)
 1. [This](This.md)
 1. [Object](Object.md)
-1. [Typeof](Typeof.md)
