@@ -124,21 +124,8 @@ and are waiting to be moved to ```stack``` by ```event loop```
 It's a special kind of function that can start and stop one or more times,
 and doesn't necessarily ever have to finish.
 
-```js
-function *foo(x) {
-	var y = x * (yield);
-	return y;
-}
+[Examples with Generator](JS%20Core/demo/Generator/1-generator-basic.js)
 
-var it = foo( 6 );
-
-// start `foo(..)`
-it.next();
-
-var res = it.next( 7 );
-
-res.value;		// 42
-```
 
 #### ```graphQL```
 
@@ -175,30 +162,7 @@ a + Math.pow( 2, 969 );		// 1.7976931348623157e+308
 #### ```Iterator```
 An object that can be iterable inside a loop, like ```array```.
 
-```js
-  const iterableObject = {
-    to: 3,
-    [Symbol.iterator]() {
-      const to = this.to
-      let current = 0
-      return {
-        next() {
-          current++
-          return {
-            done: current > to,
-            value: current,
-          }
-        }
-      }
-    }
-  }
-
-  console.log(...iterableObject) // 1 2 3
-
-  for (let num of iterableObject) {
-    console.log(num) // 1 2 3
-  }
-```
+[Examples with Iterator](JS%20Core/demo/Iterator/1-iterator-basic.js)
 
 
 ## J:
@@ -234,23 +198,23 @@ to test different parts of a processes.
 
 ## N:
 
-#### ```Numbers```
+#### ```Number```:
 JavaScript's numbers is based on the "IEEE 754" standard, often called "floating-point." JavaScript specifically uses the "double precision" format (aka "64-bit binary").
 
-#### ```Number.MAX_VALUE```
+##### ```Number.MAX_VALUE```
 The maximum integer that can "safely" be represented is ```2^53 - 1```, which is ```9007199254740991```
 
 
 ## O:
 
-#### ```Object.assign```
+#### ```Object```:
+
+##### ```Object.assign```
 Allows shadow cloning props from one object into another.
 
-#### ```Object.setPrototypeOf```
+##### ```Object.setPrototypeOf```
 
-```js
-Object.setPrototypeOf( o2, o1 );
-```
+Allows set object as [```prototype```](#prototype) of another object.
 
 #### ```OLOO```
 Objects-linked-to-other-objects is a code style which creates and relates objects directly without the abstraction of classes. OLOO quite naturally implements [[Prototype]]-based behavior delegation.
@@ -264,22 +228,24 @@ Objects-linked-to-other-objects is a code style which creates and relates object
 
 #### ```Partial application```
 
-#### ```Promise```
+#### ```Promise```:
 It's a special JavaScript object that resolves ```async code``` by execute
 depending on event code after event triggering. Also it allows handle errors and combines ```async code```
 by some conditions, like waiting on all event, etc.
 
 [Examples with Promise](JS%20Core/demo/Promise/1-promise-basic.js)
 
-#### ```Promise.all```
+##### ```Promise.all```
 Wait the moment when each promise will be ready.
 
 [Examples with Promise.all](JS%20Core/demo/Promise/2-promise-all.js)
 
-#### ```Promise.race```
+##### ```Promise.race```
 Wait the moment when first promise will be ready or will be rejected.
 
 [Examples with Promise.race](JS%20Core/demo/Promise/3-promise-race.js)
+
+#### ```Prototype```
 
 #### ```Proxy```
 
@@ -339,31 +305,28 @@ to ensure an expected behavior on selected modules.
 ## T:
 
 #### ```TCO```
-Tail Call Optimization
+Tail Call Optimization.
 
 #### ```TDD```
 
 #### ```Typeof```
-operator inspects the type of the given value
-Example:
-```js
-typeof undefined       // "undefined"
-typeof true            // "boolean"
-typeof 42              // "number"
-typeof "42"            // "string"
-typeof { life: 42 }    // "object"
-typeof null            // "object"
-typeof function a(){}  // "function"
-typeof new String("s") // "object"
-// added in ES6!
-typeof Symbol()        //  "symbol"
-```
+Operator inspects the type of the given value.
+
+[More about typeof](JS%20Core/Typeof.md)
 
 #### ```Types```:
-JavaScript defines seven built-in types: ```null```, ```undefined```, ```boolean```, ```number```, ```string```, ```object```, ```symbol```.
+JavaScript defines seven built-in types:
+* ```number```
+* ```string```
+* ```boolean```
+* ```null```
+* ```undefined```
+* ```object```
+* ```symbol```
 
-#### ```TypedArrays```
-ArrayBuffer, DataView, Int8Array, Uint8Array, Uint8ClampedArray, Int16Array, Uint16Array, Int32Array, Uint32Array, Float32Array, Float64Array
+#### ```TypedArrays```:
+
+```ArrayBuffer```, ```DataView```, ```Int8Array```, ```Uint8Array```, ```Uint8ClampedArray```, ```Int16Array```, ```Uint16Array```, ```Int32Array```, ```Uint32Array```, ```Float32Array```, ```Float64Array```.
 
 
 ## W:
