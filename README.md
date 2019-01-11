@@ -315,6 +315,18 @@ JavaScript defines seven built-in types:
 ```ArrayBuffer```, ```DataView```, ```Int8Array```, ```Uint8Array```, ```Uint8ClampedArray```, ```Int16Array```, ```Uint16Array```, ```Int32Array```, ```Uint32Array```, ```Float32Array```, ```Float64Array```.
 
 
+## U:
+
+#### ```URI```
+*Uniform Resource Identifier*. URIs are a standard for identifying documents using a short string of numbers, letters, and symbols. ```URLs```, ```URNs```, and ```URCs``` are all types of URI.
+
+#### ```URL```
+*Uniform Resource Locator*. URL is a reference to a web resource that specifies its location and a mechanism for retrieving it.
+
+Example: ```https://mysite.com/route?foo=bar#anchor```.
+
+URLs always start with a protocol(```https```) and usually contain information such as the network hostname (```mysite.com```) and often a document path (```route```). URLs may have query parameters(```foo```) and fragment identifiers(```anchor```).
+
 ## W:
 
 #### ```WeakMap```
